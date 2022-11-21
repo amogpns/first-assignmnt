@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="first.css" />
+  </head>
+  <body>
+    <table class="center" id="myTable">
+      <caption class="caption">
+       
+      </caption>
+      <thead>
+        <th scope="col">SL.No.</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">City</th>
+        <th scope="col">Country</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="serial_number">&nbsp;</td>
+          <td>Amogh</td>
+          <td>PN</td>
+          <td>Brahmavar</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td class="serial_number">&nbsp;</td>
+          <td>Praveen</td>
+          <td>Adiga</td>
+          <td>Udupi</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td class="serial_number">&nbsp;</td>
+          <td>Adarsh</td>
+          <td>Kumar</td>
+          <td>Bengaluru</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td class="serial_number">&nbsp;</td>
+          <td>Veena</td>
+          <td>Rao</td>
+          <td>Hyderbad</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td class="serial_number">&nbsp;</td>
+          <td>Basavaraj</td>
+          <td>Bommai</td>
+          <td>Haveri</td>
+          <td>India</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+
+    <button class="button_top" type="button" onclick="myFunction_top()">
+      Add row to top
+    </button>
+    <button class="button_bottom" type="button" onclick="myFunction_bottom()">
+      Add row to bottom
+    </button>
+
+    <script>
+      function myFunction_top() {
+        var table = document.getElementById("myTable");
+        var row = table.insertRow(1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell1.innerHTML = "";
+        cell2.innerHTML = "Narendra";
+        cell3.innerHTML = "Modhi";
+        cell4.innerHTML = "Vadodara";
+        cell5.innerHTML = "India";
+      }
+      function myFunction_bottom() {
+        var table = document.getElementById("myTable");
+        var row = table.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell1.innerHTML = "";
+        cell2.innerHTML = "Shruthi";
+        cell3.innerHTML = "Rao";
+        cell4.innerHTML = "Kunjal";
+        cell5.innerHTML = "India";
+      }
+    </script>
+  </body>
+</html>
